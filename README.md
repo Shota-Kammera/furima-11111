@@ -1,24 +1,36 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Usersテーブル
 
-Things you may want to cover:
+|                 |          |             |
+| --------------- | -------- | ----------- |
+| nickname        | string   | null: false |
+| email           | string   | null: false |
+| password        | string   | null: false |
+| birth_day       | datetime | null: false |
+| last_name       | string   | null: false |
+| last_name_kana  | string   | null: false |
+| first_name      | string   | null: false |
+| first_name_kana | string   | null: false |
 
-* Ruby version
+## Itemsテーブル
 
-* System dependencies
+|                   |          |                              |
+| ----------------- | -------- | ---------------------------- |
+| vendor            | string   | null:false                   |
+| item_name         | string   | null:false                   |
+| item_image        | text     | null:false                   |
+| item_info         | text     | null:false                   |
+| category          | boolean  | null:false                   |
+| item_status       | text     | null:false                   |
+| delivery_fee      | integer  | null:false                   |
+| ship_from_address | text     | null:false                   |
+| ship_time         | datetime | null:false                   |
+| amount_sold       | integer  | null:false                   |
+| user_id           | integer  | null:false, foreign_key:true |
 
-* Configuration
+## purchase_recordsテーブル
 
-* Database creation
 
-* Database initialization
+## delivery_infoテーブル
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
