@@ -29,7 +29,6 @@
 | amount_sold       | integer  | null:false                   |
 | user_id           | integer  | null:false, foreign_key:true |
 
-
 ## purchase_recordsテーブル
 |                |         |                               | 
 | -------------- | ------- | ----------------------------- | 
